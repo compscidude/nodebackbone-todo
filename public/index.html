@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Node Todo</title>
+</head>
+<body>
+
+
+	<!-- ================  Templates ======================== -->
+	<script type="text/template" id="tmpl-each-item">
+	        <input id="check" type="checkbox" >
+	     	<label id="todo-text"> <%= text %>  </label>     	
+	     	<input class='edit' type='text' value= <%="'" + text + "'" %> >     	
+	</script> 
+
+	<script type="text/template" id="tmpl-footer">
+	  <% if (done_total) { %>
+		<button id="delete_completed" class="btn btn-success">
+		  delete <%= done_total %> completed todos </button>
+		<% } %>
+		<button id="select_all"  class="btn"> Select all </button>
+	</script>
+	<!-- ================  Templates ======================== -->
+
+<div id="container" class="container">
+	<div class="row top20"> 
+		<div class="page-header text-center"> <h1> TODO Application </h1>
+			<small> Backbone.js Node.js Express.js MongoDB </small> </div>
+	</div>
+
+	<div class="row top30">
+		<div class="span4 offset4">
+			<input class="span4" id="new-todo" type="text" placeholder="Enter a new todo"  />
+		</div>
+	</div>
+	
+	<div class="row top10">
+		<div id="todo-list" class="span4 offset4">
+			
+		</div>
+	</div>
+
+	<div class="row top10">
+		<div class="span4 offset4" id ="footer">
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script> 
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<script src="app.js"></script>
+
+</body>
+</html>
