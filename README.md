@@ -24,7 +24,4 @@ Line 9: mongoose.connect('mongodb://user:password@ds035740.mongolab.com:35740/to
 and locate to your mongoDB  
 
 
-![Screenshot](http://i.imgur.com/7yJxC7L.png?raw=true)
-
-
 
