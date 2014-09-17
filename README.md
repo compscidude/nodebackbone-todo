@@ -16,6 +16,7 @@ the following links:
 The backend is running node.js with express.js and uses MongoDB via remote database from MongoLab (www.mongolab.com).
 Node is set up as RESTful API using CRUD, and our front-end backbone.js is responsible for rendering data and handling events.
 
+Setup
 =================== 
 To run this on your local machine, please edit line 9 in server.js
 
