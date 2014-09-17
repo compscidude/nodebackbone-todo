@@ -10,9 +10,11 @@ the following links:
     https://github.com/ccoenraets/backbone-jax-cellar/
     
 
-Technologies Used
+The backend is running node.js with express.js and uses MongoDB via remote database from MongoLab (www.mongolab.com).
+Node is set up as RESTful API using CRUD, and our front-end backbone.js is responsible for rendering data and handling events.
 
-Backbone.js 
-Node.js
-Express.js
-Twitter Bootstrap
+![Screenshot](http://imgur.com/ugAwA78.png?raw=true)
+![Screenshot](http://i.imgur.com/7yJxC7L.png?raw=true)
+
+
+
