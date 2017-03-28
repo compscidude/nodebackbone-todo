@@ -40,9 +40,6 @@ app.get('/api/todos/:todo_id', function(req, res) {
             res.send("this id does not exist");
         res.json(todo);
     })
-
-
-
 });
 
 // create a new todo and return all todos (perhaps we can just return the recently added one and append it)
@@ -63,7 +60,6 @@ app.post('/api/todos', function(req, res) {
             res.json(todos);
         })
     });
-
 });
 
 // This is how you update one particular todo.
@@ -80,7 +76,6 @@ app.put('/api/todos/:todo_id', function(req, res) {
             console.log("todo updated");
         })
     });
-
 });
 
 // delete todo
@@ -101,7 +96,6 @@ app.delete('/api/todos/:todo_id', function(req, res) {
             res.json(todos);
         })
     });
-
 });
 
 
